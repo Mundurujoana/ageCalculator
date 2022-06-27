@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Age calculator </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="con-title">
+        <h1>Age calculator</h1>
+    </div>
+
+    <div class="box">
+        <p class="box-title">Date</p>
+            <input type="text" name="date" id="date" placeholder="DD" required="required" minlength="1" maxlength="2"/>
+      
+    </div>
+
+    <div class="box">
+        <p class="box-title">Month</p>
+        <input type="text" name="month" id="month" placeholder="MM" required="required" minlength="1" maxlength="2" />
+    </div>
+
+    <div class="box">
+        <p class="box-title">Year</p>
+        <input type="text" name="year" id="year" placeholder="YYYY" required="required" minlength="2" maxlength="4" />
+    </div>
+    <div class="button">
+        <input type="button" name="submit" value="Submit" onclick="age()" />
+       </div>
+       <div id="age"></div>
+
+   </div>
+   <!-- Create a display to see the age -->
+   <!-- This box has a small display at the bottom to see your current age. -->
+    <!-- Now it is in hidden state.This can only be seen when it is executed by JavaScript. -->
+<script src="index.js"></script>
+</body>
+</html>
